@@ -1,0 +1,51 @@
+resolution 640x960
+
+castle theme, 
+
+
+last level of stage, you kill the king
+
+keys open doors
+
+player teleports and kills enemies
+
+enemies can walk around (patrol)
+nonmoving guards are sleeping
+enemies that shoot out or fall
+enemies that warp you left, up, down, or right (dark mages or ghosts)
+enemies that move after they die (ghosts)
+enemies that take a certain number of hits (FIX)
+enemies that dont die (heavy armour?), enemies that warp and dont die
+enemies that move, but spawn a non moving target after death
+
+triggers that open doors
+
+if you get blue dagger, you can kill blue enemies
+
+
+things that cover or shield enemies from being clicked on
+
+Piano tiles (rush or timed mode) saves your high score (drop bombs and enemies) until reach the top
+
+think of levels
+
+Add icon for game
+
+Replay, Next, Levels buttons on win screen
+
+Later be able to hold two auras at once?
+
+Win Animation!
+
+Stars (like duckies) for points
+
+Dont forget bundle identifier under player settings/android/other settings when publishing!!
+
+slice buttons but make all buttons at 0? so cam doesnt move Maybe for vic window
+
+Fix restart button glitch (start at button if pressed twice)
+
+Add fun winscreen effects
+
+gem thief character with mini wings, falling animation if velocity is more than 0
+

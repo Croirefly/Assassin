@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{FCAF9891-BE80-D41A-5026-AE49274615AF}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AutoFade.cs" />
+     <Compile Include="Assets\CameraMouseDrag.cs" />
+     <Compile Include="Assets\ClickToLevelScript.cs" />
+     <Compile Include="Assets\ClickToNextScript.cs" />
+     <Compile Include="Assets\ClickToRestartScript.cs" />
+     <Compile Include="Assets\DestroyOffScreenScript.cs" />
+     <Compile Include="Assets\DestroyOnGround.cs" />
+     <Compile Include="Assets\DoorScript.cs" />
+     <Compile Include="Assets\EnemyCannonRandScript.cs" />
+     <Compile Include="Assets\EnemyCannonScript.cs" />
+     <Compile Include="Assets\EnemyMultiHitScript.cs" />
+     <Compile Include="Assets\EnemyScript.cs" />
+     <Compile Include="Assets\EnemyWalkingScript.cs" />
+     <Compile Include="Assets\HeartBar.cs" />
+     <Compile Include="Assets\HeartTest.cs" />
+     <Compile Include="Assets\KeyHolderScript.cs" />
+     <Compile Include="Assets\KeyHolderScriptLast.cs" />
+     <Compile Include="Assets\KeyScript.cs" />
+     <Compile Include="Assets\LevelSelectControllerScript.cs" />
+     <Compile Include="Assets\LevelSelectScript.cs" />
+     <Compile Include="Assets\Parallaxing.cs" />
+     <Compile Include="Assets\ParticleSortingLayerScript.cs" />
+     <Compile Include="Assets\PlatformerCharacter2D.cs" />
+     <Compile Include="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" />
+     <Compile Include="Assets\Sample Assets\2D\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Sample Assets\2D\Scripts\Platformer2DUserControl.cs" />
+     <Compile Include="Assets\Sample Assets\2D\Scripts\Restarter.cs" />
+     <Compile Include="Assets\ScreenDestroyScript.cs" />
+     <Compile Include="Assets\SelfDestructOnBeatScript.cs" />
+     <Compile Include="Assets\SelfDestructScript.cs" />
+     <Compile Include="Assets\Tiling.cs" />
+     <Compile Include="Assets\TimeAttackController.cs" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{451DC358-83C5-8EBA-32CD-1AA041D90A3F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{327C4E66-347D-563A-A6DA-09F9DA2C6BB8}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

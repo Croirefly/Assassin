@@ -25,13 +25,9 @@ if you get blue dagger, you can kill blue enemies
 
 things that cover or shield enemies from being clicked on
 
-Piano tiles (rush or timed mode) saves your high score (drop bombs and enemies) until reach the top
-
 think of levels
 
 Add icon for game
-
-Replay, Next, Levels buttons on win screen
 
 Later be able to hold two auras at once?
 
@@ -49,3 +45,7 @@ Add fun winscreen effects
 
 gem thief character with mini wings, falling animation if velocity is more than 0
 
+make time attack camera buffer shorter? and make sure it starts at 99:99
+Try making 4 routes for time attack, delay start of timer
+
+change "try not to lose" if you win

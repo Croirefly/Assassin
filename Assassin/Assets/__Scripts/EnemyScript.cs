@@ -19,6 +19,14 @@ public class EnemyScript : MonoBehaviour {
 	private Transform player;
 	private Animator playerAnimator;
 	private bool inRange = false;
+	private LineRenderer myLineRenderer;
+
+	void Awake() {
+		if(GetComponent<LineRenderer>()){
+			myLineRenderer = GetComponent<LineRenderer>();
+			myLineRenderer.SetPosition(1, new Vector3 (xWarp,yWarp,0));
+		}
+	}
 
 
 	// Use this for initialization

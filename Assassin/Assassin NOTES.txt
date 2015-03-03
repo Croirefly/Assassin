@@ -18,9 +18,9 @@ enemies that take a certain number of hits (FIX)
 enemies that dont die (heavy armour?), enemies that warp and dont die
 enemies that move, but spawn a non moving target after death
 
-triggers that open doors
+triggers that open door
 
-if you get blue dagger, you can kill blue enemies
+warp gem, where the line moves
 
 
 things that cover or shield enemies from being clicked on
@@ -48,4 +48,8 @@ gem thief character with mini wings, falling animation if velocity is more than 
 make time attack camera buffer shorter? and make sure it starts at 99:99
 Try making 4 routes for time attack, delay start of timer
 
-change "try not to lose" if you win
+Detect swipes so player can swipe down main menu
+
+text not showing up on android phone
+
+Increase Hitbox size

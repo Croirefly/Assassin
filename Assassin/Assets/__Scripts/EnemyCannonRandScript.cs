@@ -6,7 +6,6 @@ public class EnemyCannonRandScript : MonoBehaviour {
 	public Rigidbody2D projectileLog;
 	public Rigidbody2D projectileBomb;
 	public float projVelocity = -2;
-	public float interval = 1;
 	public Transform spawn1;
 	public Transform spawn2;
 	public Transform spawn3;
@@ -23,15 +22,15 @@ public class EnemyCannonRandScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		distance = -8;
-		rigidbody2D.velocity = new Vector2(0,20);
+		distance = 0;
+		GetComponent<Rigidbody2D>().velocity = new Vector2(0,45);
 		//InvokeRepeating ("LaunchProjectile", 0.3f, interval); //time before starting, time interval
 		oldChance = 1;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if(distance > 8){
+		if(distance > 3){
 			LaunchProjectile();
 			distance = 0;
 		}

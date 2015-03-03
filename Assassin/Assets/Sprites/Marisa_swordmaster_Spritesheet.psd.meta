@@ -1,6 +1,68 @@
 fileFormatVersion: 2
 guid: 7ca9f36e0f3341747be12e67c50f620f
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Marisa_swordmaster_Spritesheet_0
+    21300002: Marisa_swordmaster_Spritesheet_1
+    21300004: Marisa_swordmaster_Spritesheet_2
+    21300006: Marisa_swordmaster_Spritesheet_3
+    21300008: Marisa_swordmaster_Spritesheet_4
+    21300010: Marisa_swordmaster_Spritesheet_5
+    21300012: Marisa_swordmaster_Spritesheet_6
+    21300014: Marisa_swordmaster_Spritesheet_7
+    21300016: Marisa_swordmaster_Spritesheet_8
+    21300018: Marisa_swordmaster_Spritesheet_9
+    21300020: Marisa_swordmaster_Spritesheet_10
+    21300022: Marisa_swordmaster_Spritesheet_11
+    21300024: Marisa_swordmaster_Spritesheet_12
+    21300026: Marisa_swordmaster_Spritesheet_13
+    21300028: Marisa_swordmaster_Spritesheet_14
+    21300030: Marisa_swordmaster_Spritesheet_15
+    21300032: Marisa_swordmaster_Spritesheet_16
+    21300034: Marisa_swordmaster_Spritesheet_17
+    21300036: Marisa_swordmaster_Spritesheet_18
+    21300038: Marisa_swordmaster_Spritesheet_19
+    21300040: Marisa_swordmaster_Spritesheet_20
+    21300042: Marisa_swordmaster_Spritesheet_21
+    21300044: Marisa_swordmaster_Spritesheet_22
+    21300046: Marisa_swordmaster_Spritesheet_23
+    21300048: Marisa_swordmaster_Spritesheet_24
+    21300050: Marisa_swordmaster_Spritesheet_25
+    21300052: Marisa_swordmaster_Spritesheet_26
+    21300054: Marisa_swordmaster_Spritesheet_27
+    21300056: Marisa_swordmaster_Spritesheet_28
+    21300058: Marisa_swordmaster_Spritesheet_29
+    21300060: Marisa_swordmaster_Spritesheet_30
+    21300062: Marisa_swordmaster_Spritesheet_31
+    21300064: Marisa_swordmaster_Spritesheet_32
+    21300066: Marisa_swordmaster_Spritesheet_33
+    21300068: Marisa_swordmaster_Spritesheet_34
+    21300070: Marisa_swordmaster_Spritesheet_35
+    21300072: Marisa_swordmaster_Spritesheet_36
+    21300074: Marisa_swordmaster_Spritesheet_37
+    21300076: Marisa_swordmaster_Spritesheet_38
+    21300078: Marisa_swordmaster_Spritesheet_39
+    21300080: Marisa_swordmaster_Spritesheet_40
+    21300082: Marisa_swordmaster_Spritesheet_41
+    21300084: Marisa_swordmaster_Spritesheet_42
+    21300086: Marisa_swordmaster_Spritesheet_43
+    21300088: Marisa_swordmaster_Spritesheet_44
+    21300090: Marisa_swordmaster_Spritesheet_45
+    21300092: Marisa_swordmaster_Spritesheet_46
+    21300094: Marisa_swordmaster_Spritesheet_47
+    21300096: Marisa_swordmaster_Spritesheet_48
+    21300098: Marisa_swordmaster_Spritesheet_49
+    21300100: Marisa_swordmaster_Spritesheet_50
+    21300102: Marisa_swordmaster_Spritesheet_51
+    21300104: Marisa_swordmaster_Spritesheet_52
+    21300106: Marisa_swordmaster_Spritesheet_53
+    21300108: Marisa_swordmaster_Spritesheet_54
+    21300110: Marisa_swordmaster_Spritesheet_55
+    21300112: Marisa_swordmaster_Spritesheet_56
+    21300114: Marisa_swordmaster_Spritesheet_57
+    21300116: Marisa_swordmaster_Spritesheet_58
+    21300118: Marisa_swordmaster_Spritesheet_59
+    21300120: Marisa_swordmaster_Spritesheet_60
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

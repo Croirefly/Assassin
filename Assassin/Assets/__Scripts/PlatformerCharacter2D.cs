@@ -10,6 +10,7 @@ public class PlatformerCharacter2D : MonoBehaviour {
 	public GameObject auraBlue;
 	public GameObject auraGreen;
 	public GameObject auraPurple;
+	public GameObject auraExplosion;
 	private float x = 0f;
 
 	void Start () {
@@ -76,11 +77,10 @@ public class PlatformerCharacter2D : MonoBehaviour {
 	}
 	void OnCollisionEnter2D (Collision2D other) {
 		if(other.gameObject.tag == "BlueSword"){
-			Destroy (GameObject.FindGameObjectWithTag("BlueAura"));
-			Destroy (GameObject.FindGameObjectWithTag("GreenAura"));
-			Destroy (GameObject.FindGameObjectWithTag("PurpleAura"));
+			DestroyAuras();
 			GameObject auraBlueInstance = Instantiate(auraBlue, this.transform.position + new Vector3(0,0,1), this.transform.rotation) as GameObject;
 			auraBlueInstance.transform.parent = this.transform;
+			GameObject auraExplosionInstance = Instantiate(auraExplosion, this.transform.position + new Vector3(0,0,1), this.transform.rotation) as GameObject;
 			swordGreen = false;
 			swordPurple = false;
 			swordBlue = true;
@@ -88,11 +88,10 @@ public class PlatformerCharacter2D : MonoBehaviour {
 		}
 
 		if(other.gameObject.tag == "GreenSword"){
-			Destroy (GameObject.FindGameObjectWithTag("BlueAura"));
-			Destroy (GameObject.FindGameObjectWithTag("GreenAura"));
-			Destroy (GameObject.FindGameObjectWithTag("PurpleAura"));
+			DestroyAuras();
 			GameObject auraGreenInstance = Instantiate(auraGreen, this.transform.position + new Vector3(0,0,1), this.transform.rotation) as GameObject;
 			auraGreenInstance.transform.parent = this.transform;
+			GameObject auraExplosionInstance = Instantiate(auraExplosion, this.transform.position + new Vector3(0,0,1), this.transform.rotation) as GameObject;
 			swordBlue = false;
 			swordPurple = false;
 			swordGreen = true;
@@ -100,9 +99,7 @@ public class PlatformerCharacter2D : MonoBehaviour {
 		}
 	
 		if(other.gameObject.tag == "PurpleSword"){
-			Destroy (GameObject.FindGameObjectWithTag("BlueAura"));
-			Destroy (GameObject.FindGameObjectWithTag("GreenAura"));
-			Destroy (GameObject.FindGameObjectWithTag("PurpleAura"));
+			DestroyAuras();
 			GameObject auraPurpleInstance = Instantiate(auraPurple, this.transform.position + new Vector3(0,0,1), this.transform.rotation) as GameObject;
 			auraPurpleInstance.transform.parent = this.transform;
 			swordBlue = false;
@@ -110,5 +107,12 @@ public class PlatformerCharacter2D : MonoBehaviour {
 			swordPurple = true;
 			Destroy(other.gameObject);
 		}
+	}
+
+	void DestroyAuras () {
+		Destroy (GameObject.FindGameObjectWithTag("BlueAura"));
+		Destroy (GameObject.FindGameObjectWithTag("GreenAura"));
+		Destroy (GameObject.FindGameObjectWithTag("PurpleAura"));
+		GameObject auraExplosionInstance = Instantiate(auraExplosion, this.transform.position + new Vector3(0,0,1), this.transform.rotation) as GameObject;
 	}
 }

@@ -24,8 +24,8 @@ public class SoundPlayVaryPitch : MonoBehaviour {
 			pitchSound = pitchMin;
 		}
 
-		audio.pitch = pitchSound;
-		audio.Play ();
+		GetComponent<AudioSource>().pitch = pitchSound;
+		GetComponent<AudioSource>().Play ();
 	}
 	
 	// Update is called once per frame

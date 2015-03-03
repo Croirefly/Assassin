@@ -22,7 +22,7 @@ public class CameraMouseDrag : MonoBehaviour {
 			GUI.skin = scrollbarSkin;
 			vSbarValue = GUI.VerticalScrollbar(new Rect(Screen.width/9-Screen.width/10, Screen.height/2-Screen.height/4, Screen.width/8-Screen.width/11, Screen.height/2), vSbarValue, 2.0F, extraHeight, 0.0F);
 			cameraPos = new Vector3(0,vSbarValue,-25);
-			camera.transform.position = cameraPos;
+			GetComponent<Camera>().transform.position = cameraPos;
 		}
 
 	}

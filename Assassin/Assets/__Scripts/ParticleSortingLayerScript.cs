@@ -7,8 +7,8 @@ public class ParticleSortingLayerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		particleSystem.renderer.sortingLayerName = "Effects";
-		particleSystem.renderer.sortingOrder = orderNumber;
+		GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingLayerName = "Effects";
+		GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingOrder = orderNumber;
 	}
 	
 	// Update is called once per frame

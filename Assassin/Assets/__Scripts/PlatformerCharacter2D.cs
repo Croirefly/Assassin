@@ -25,52 +25,53 @@ public class PlatformerCharacter2D : MonoBehaviour {
 			Debug.Log ("Left Clicked");
 			Vector2 mousePosition = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint (Input.mousePosition).y);
 			RaycastHit2D hit = Physics2D.Raycast (mousePosition, Vector2.zero);
+			if(hit.collider){
+				if(hit.collider.tag == "Enemy"){
+					Debug.Log ("We hit" + hit.collider.name);
+					if (swordBlue) {
+						hit.collider.BroadcastMessage ("HitByRay", "blue");
+					} else if (swordGreen) {
+						hit.collider.BroadcastMessage ("HitByRay", "green");
+					} else if (swordPurple) {
+						hit.collider.BroadcastMessage ("HitByRay", "purple");
+					} else {
+						hit.collider.BroadcastMessage ("HitByRay", "red");
+					}
+					
+					x = 100f;
+					animator.SetFloat("Anim",x);
+				}
 
-			if(hit.collider.tag == "Enemy"){
-				Debug.Log ("We hit" + hit.collider.name);
-				if (swordBlue) {
-					hit.collider.BroadcastMessage ("HitByRay", "blue");
-				} else if (swordGreen) {
-					hit.collider.BroadcastMessage ("HitByRay", "green");
-				} else if (swordPurple) {
-					hit.collider.BroadcastMessage ("HitByRay", "purple");
-				} else {
-					hit.collider.BroadcastMessage ("HitByRay", "red");
+				if(swordBlue){
+					if(hit.collider.tag == "Blue"){
+						Debug.Log ("We hit" + hit.collider.name);
+						hit.collider.SendMessage ("HitByBlue");
+						x = 100f;
+						animator.SetFloat("Anim",x);
+					}
 				}
-				
-				x = 100f;
-				animator.SetFloat("Anim",x);
-
-			}
-			if(swordBlue){
-				if(hit.collider.tag == "Blue"){
+				if(swordGreen){
+					if(hit.collider.tag == "Green"){
+						Debug.Log ("We hit" + hit.collider.name);
+						hit.collider.SendMessage ("HitByGreen");
+						x = 100f;
+						animator.SetFloat("Anim",x);
+					}
+				}
+				if(swordPurple){
+					if(hit.collider.tag == "Purple"){
+						Debug.Log ("We hit" + hit.collider.name);
+						hit.collider.SendMessage ("HitByPurple");
+						x = 100f;
+						animator.SetFloat("Anim",x);
+					}
+				}
+				if(hit.collider.tag == "Button"){
 					Debug.Log ("We hit" + hit.collider.name);
-					hit.collider.SendMessage ("HitByBlue");
+					hit.collider.SendMessage ("HitByRay");
 					x = 100f;
 					animator.SetFloat("Anim",x);
 				}
-			}
-			if(swordGreen){
-				if(hit.collider.tag == "Green"){
-					Debug.Log ("We hit" + hit.collider.name);
-					hit.collider.SendMessage ("HitByGreen");
-					x = 100f;
-					animator.SetFloat("Anim",x);
-				}
-			}
-			if(swordPurple){
-				if(hit.collider.tag == "Purple"){
-					Debug.Log ("We hit" + hit.collider.name);
-					hit.collider.SendMessage ("HitByPurple");
-					x = 100f;
-					animator.SetFloat("Anim",x);
-				}
-			}
-			if(hit.collider.tag == "Button"){
-				Debug.Log ("We hit" + hit.collider.name);
-				hit.collider.SendMessage ("HitByRay");
-				x = 100f;
-				animator.SetFloat("Anim",x);
 			}
 		}
 
